@@ -2266,3 +2266,12 @@ each_elfs_total_calories = map(sum,each_elfs_calories)
 
 maxCalories = max(each_elfs_total_calories)
 print(maxCalories)
+
+# ----------- part 2 -------------
+
+# Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total?
+
+all_calories = each_elfs_total_calories[:]
+all_calories.sort()
+total_calories_of_max_3_elfs = sum(all_calories[-3:])
+print(total_calories_of_max_3_elfs)
