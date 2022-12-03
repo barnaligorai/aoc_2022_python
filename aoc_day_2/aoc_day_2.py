@@ -9,9 +9,6 @@ def read_file(file_name):
     file.close()
     return data
 
-# a z 3 - 1 = 2 --- 3 0
-# a y 2 - 1 = 1 --- 2 6
-
 
 def parse(raw_input):
     return map(lambda a: a.split(' '), raw_input)
